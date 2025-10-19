@@ -1,0 +1,50 @@
+[
+  {
+    "title": "United States",
+    "capital": "Washington, D.C.",
+    "population": "331 million",
+    "fact": "The United States is the third largest country by land area and population."
+  },
+  {
+    "title": "France",
+    "capital": "Paris",
+    "population": "67 million",
+    "fact": "France is famous for its cuisine, art, and the Eiffel Tower."
+  },
+  {
+    "title": "Japan",
+    "capital": "Tokyo",
+    "population": "125 million",
+    "fact": "Japan is made up of over 6,800 islands and is known for its technology and culture."
+  },
+  {
+    "title": "Brazil",
+    "capital": "Brasília",
+    "population": "213 million",
+    "fact": "Brazil is the largest country in South America and home to the Amazon rainforest."
+  },
+  {
+    "title": "Australia",
+    "capital": "Canberra",
+    "population": "25 million",
+    "fact": "Australia is both a country and a continent, famous for its unique wildlife."
+  },
+  {
+    "title": "India",
+    "capital": "New Delhi",
+    "population": "1.4 billion",
+    "fact": "India is the second most populous country and has a rich cultural history."
+  },
+  {
+    "title": "Canada",
+    "capital": "Ottawa",
+    "population": "38 million",
+    "fact": "Canada is the second largest country by land area and is known for its natural beauty."
+  },
+  {
+    "title": "Egypt",
+    "capital": "Cairo",
+    "population": "102 million",
+    "fact": "Egypt is famous for its ancient civilization and the iconic pyramids."
+  }
+]
