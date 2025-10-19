@@ -14,12 +14,12 @@ const Navbar = () =>{
     <div className=" hidden md:flex gap-4 cursor-pointer text-lg font-bold">
       
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
+      <NavLink to="/about">About page</NavLink>
       <NavLink to="/country">Country</NavLink>
       <NavLink to="/contact">Contact</NavLink>
     </div>
 
-    <button className="md:hidden cursor-pointer" onClick={menuHandler}><GiHamburgerMenu/></button>
+    <button className="md:hidden cursor-pointer " onClick={menuHandler}><GiHamburgerMenu/></button>
 
     {isOpen && (
       <div className=" flex flex-col items-center pt-40 gap-5 fixed right-0 text-black top-0 bg-white w-64 h-full gap-4 cursor-pointer text-lg font-bold">
