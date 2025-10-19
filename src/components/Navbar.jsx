@@ -1,91 +1,36 @@
-import React, { useState } from 'react'
-import logo from '../assets/malabar.png'
-
-// const Navbar = () => {
-//   const [menuOpen,setMenuOpen] = useState(false);
-//   const handleMenu = () => {
-//     setMenuOpen(!menuOpen);
-//   }
-//   return (
-//   <nav className='p-3 flex justify-between items-center bg-white shadow-sm'> 
-//     <a href="#" className='flex items-center gap-2'>
-//       <img src={logo} alt="" className='w-10 h-10'/>
-//       <span className='text-lg font-medium'>Malabar</span>
-//     </a>
-
-    
-
-//     {/* creating navbar for the breakpoint of md */}
-
-//     <ul className='md:flex hidden gap-6 text-lg font-medium cursor-pointer'>
-//       <li>Pricing</li>
-//       <li>Docs</li>
-//       <li>Changelog</li>
-//       <li>Blog</li>
-//       <li>Login</li>
-//     </ul>
-    
-
-//     <p className='hidden md:flex'>Search</p>
-//     {/* menu for mobile */}
-//     <button className='text-3xl font-bold md:hidden cursor-pointer' onClick={handleMenu}>
-//       ≡
-//     </button>
-
-
-
-//     {menuOpen && (
-//   <div className="fixed top-0 right-0 w-64 h-full bg-white shadow-lg z-50 p-6 flex flex-col gap-6 text-lg font-medium">
-//     <button className="text-2xl self-end" onClick={handleMenu}>×</button>
-//     <a>Pricing</a>
-//     <a>Docs</a>
-//     <a>Changelog</a>
-//     <a>Blog</a>
-//     <a>Login</a>
-//   </div>
-// )}
-
-//   </nav>
-//   )
-// }
-
-// export default Navbar;
-
-
 //creating responsive navbar
-
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoCloseSharp } from "react-icons/io5";
+import { useState } from "react";
 const Navbar = () =>{
-  const [openMenu,setOpenMenu] = useState(false);
-  const handleMenu = () =>{
-  setOpenMenu(!openMenu);
-  }
-  return (
-  <nav className='p-3 flex justify-between items-center'>
-    <img src={logo} alt="" className='h-10 w-10'/>
+  const [isOpen,setIsOpen] = useState(false);
+  const menuHandler = () => setIsOpen(!isOpen);
+ return (
+  <nav className="flex items-center justify-around p-2 bg-black text-white ">
+    <h1 className="text-2xl">WorldAtlas</h1>
 
-    <ul className='hidden md:flex gap-6 text-lg font-medium cursor-pointer'>
-      <li>About</li>
-      <li>Home</li>
-      <li>Services</li>
-      <li>Contact</li>
-    </ul>
 
-    <button className='cursor-pointer md:hidden' onClick={handleMenu}>☰</button>
-    
+    <div className="hidden md:flex gap-4 cursor-pointer text-lg font-bold">
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/country">Country</a>
+      <a href="/contact">Contact</a>
+    </div>
 
-    {/* mobile menu */}
-    {openMenu && (
-      <div className='fixed top-0 right-0 w-64 h-full bg-white shadow-lg z-50 p-6 flex flex-col gap-6 text-lg font-medium'>
-        <button className='text-2xl self-end cursor-pointer' onClick={handleMenu}>×</button>
-        <a href="">About</a>
-        <a href="">Home</a>
-        <a href="">Services</a>
-        <a href="">Contact</a>
-      </div>
+    <button className="md:hidden cursor-pointer" onClick={menuHandler}><GiHamburgerMenu/></button>
+
+    {isOpen && (
+      <div className=" flex flex-col items-center pt-40 gap-5 fixed right-0 text-black top-0 bg-white w-64 h-full gap-4 cursor-pointer text-lg font-bold">
+        <button className="cursor-pointer absolute top-5 right-5" onClick={menuHandler}><IoCloseSharp /></button>
+      <a href="/">Home</a>
+      <a href="/about">About</a>
+      <a href="/country">Country</a>
+      <a href="/contact">Contact</a>
+    </div>
     )}
-    <button className='hidden md:flex'>Search</button>
+    
   </nav>
-  )
+ )
 }
 
 export default Navbar;
