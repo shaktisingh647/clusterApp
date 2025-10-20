@@ -6,6 +6,7 @@ import apiData from "../data/apiData.json"
 export const Home = () => {
   return (
     <div className="bg-black ">
+      <h1 className="text-white">Shakti Singh</h1>
       <Navbar />
       <div className="max-w-6xl mx-auto p-3 md:flex items-center justify-around gap-10 ">
         <div>
