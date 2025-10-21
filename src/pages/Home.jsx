@@ -8,7 +8,7 @@ export const Home = () => {
     <div className="bg-black ">
       
       <Navbar />
-      <p>navbar</p>
+      
       <div className="max-w-6xl mx-auto p-3 md:flex items-center justify-around gap-10 ">
         <div>
             <h1 className="text-3xl font-bold text-white">Explore the World, One <br />Country at a Time </h1>
