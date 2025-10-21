@@ -5,22 +5,13 @@ import { Card } from "../components/Card";
 import apiData from "../data/apiData.json"
 
 export const Home = () => {
-  const [count,setCount] = useState(0);
-  const addHandler = () =>{
-    setCount(count+1);
-  }
-
-  const substractHandler = () =>{
-    setCount(count-1);
-  }
+ 
   return (
-    <div className="bg-white">
+    <div className="bg-black">
       
       <Navbar />
-      <h1>creating counter</h1>
-      <button onClick={addHandler}>+</button>
-      <span>{count}</span>
-      <button onClick={substractHandler}>-</button>
+      
+      
       <div className="max-w-6xl mx-auto p-3 md:flex items-center justify-around gap-10 ">
         <div>
             <h1 className="text-3xl font-bold text-white">Explore the World, One <br />Country at a Time </h1>
