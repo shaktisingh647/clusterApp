@@ -1,21 +1,17 @@
-import React, { useState } from "react";
+import React from "react";
 import Navbar from "../components/Navbar";
 import world from "../assets/world.png";
 import { Card } from "../components/Card";
 import apiData from "../data/apiData.json"
-
 export const Home = () => {
- 
   return (
-    <div className="bg-black">
-      
+    <div className="bg-black ">
+      <h1 className="text-white">Shakti Singh</h1>
       <Navbar />
-      
-      
       <div className="max-w-6xl mx-auto p-3 md:flex items-center justify-around gap-10 ">
         <div>
             <h1 className="text-3xl font-bold text-white">Explore the World, One <br />Country at a Time </h1>
-            <p className="text-white">Discover the history, and beauty of every nation.Sort,search and filter through contries to find the details you need</p>
+            <p className="text-white">Discover the historyyy, and beauty of every nation.Sort,search and filter through contries to find the details you need</p>
         </div>
         <div>
             <img src={world} alt="" />
