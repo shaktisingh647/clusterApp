@@ -6,6 +6,8 @@ import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { Country } from './pages/Country';
 import { Error } from './pages/Error';
+import Product from './pages/Product';
+import ProductCard from './pages/ProductCard';
 function App() {
   return (
   
@@ -17,6 +19,8 @@ function App() {
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/country" element={<Country/>}/>
       <Route path="*" element={<Error/>} />
+      <Route path="/product" element={<Product/>} />
+      <Route path="/productcard" element={<ProductCard/>} />
     </Routes>
     
   )
